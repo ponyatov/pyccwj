@@ -116,4 +116,54 @@ Jennifer hates green tomatoes.
 * \[tiger book\] https://www.cs.princeton.edu/~appel/modern/ [PDF](https://doc.lagout.org/programmation/C/Modern%20Compiler%20Implementation%20in%20C%20%5BAppel%201997-12-13%5D.pdf)<br>
 Andrew W. Appel
 
-### 
+### Учебные ресурсы
+
+Если вы хотите начать с чтения книг, статей по компиляторам и освоения
+существующих инструментов , я очень рекомендую этот список:
+
+[Модерируемый список потрясающих ресурсов по компиляторам, интерпретаторам и средам исполнения](https://github.com/aalhour/awesome-compilers) Ахмада Альхура
+
+### Существующие облегченные компиляторы
+
+Поскольку я собираюсь создать свой собственный компилятор, я планирую искать
+идеи в других компиляторах и, возможно, также позаимствовать часть их кода. Вот
+те, на которые я смотрю:
+* [SubC](http://www.t3x.org/subc/) by Nils M Holm
+* [Swieros C Compiler](https://github.com/rswier/swieros/blob/master/root/bin/c.c) by Robert Swierczek
+* [fbcc](https://github.com/DoctorWkt/fbcc) by Fabrice Bellard
+* [tcc](https://bellard.org/tcc/), также by Fabrice Bellard и другие
+* [catc](https://github.com/yui0/catc) by Yuichiro Nakada
+* [amacc](https://github.com/jserv/amacc) by Jim Huang
+* [Small C](https://en.wikipedia.org/wiki/Small-C) by Ron Cain, James E. Hendrix, и его клоны, сделанные другими авторами
+
+В частности, я буду использовать большинство идей и часть кода из компилятора SubC.
+
+## Настройка среды разработки
+
+Предполагая, что вы хотите отправиться в это путешествие вместе со мной, вот что
+вам нужно. Я собираюсь использовать среду разработки Linux, поэтому скачайте и
+настройте свою любимую систему Linux: я использую Lubuntu 18.04. *Debian
+GNU/Linux 9*
+
+Я собираюсь компилировать для двух аппаратных платформ: Intel x86-64 и 32-битной
+ARM. Я буду использовать ПК с Lubuntu 18.04 в качестве цели Intel и Raspberry Pi
+с Raspbian в качестве цели ARM.
+*Для переносимости кода для встраиваемых систем будет использоваться
+интерпретатор байткода (виртуальная машина), написанная на ANSI'C*
+
+На платформе Intel нам понадобится существующий компилятор Си. Итак, установите
+этот пакет (я даю команды Ubuntu/Debian):
+```
+$ sudo apt install build-essential
+```
+
+Если для ванильной системы Linux требуются дополнительные инструменты, дайте мне знать.
+
+Проще всего, клонируйте копию этого репозитория GitHub, и запустите скрипт установки,
+он включает установку всех необходимых пакетов и отдельного окружения Python:
+```
+$ cd ~
+$ git clone -o gh https://github.com/ponyatov/pyccwj
+$ cd ~/pyccwj
+~/pyccwj$ make install
+```
