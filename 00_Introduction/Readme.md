@@ -105,3 +105,15 @@ Jennifer hates green tomatoes.
   конструкции входного языка на другой язык. Здесь мы преобразуем входные данные
   по частям в язык более низкого уровня.
 
+## Ресурсы
+
+В интернете много ресурсов по разработке компиляторов. Вот те, на которые я буду смотреть:
+
+### Книги
+
+* \[dragon book\] [Компиляторы. Принципы, технологии и инструментарий](https://www.ozon.ru/context/detail/id/148627197/) **второе издание**<br>
+Лам Моника С., Сети Рави, Ульман Джеффри Д., Ахо Альфред В.
+* \[tiger book\] https://www.cs.princeton.edu/~appel/modern/ [PDF](https://doc.lagout.org/programmation/C/Modern%20Compiler%20Implementation%20in%20C%20%5BAppel%201997-12-13%5D.pdf)<br>
+Andrew W. Appel
+
+### 
