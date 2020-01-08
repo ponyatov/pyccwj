@@ -9,7 +9,7 @@ ispired by: https://github.com/DoctorWkt/acwj
 
 # Путешествие по Написанию Компилятора
 
-### Оригинал взят из https://github.com/ponyatov/pyccwj , и переделан под Python.
+### Оригинал взят из https://github.com/DoctorWkt/acwj , и переделан под Python.
 
 В этом репозитории Github я документирую свое путешествие по написанию
 компилятора для подмножества языка Си в интерпретируемый байт-код. Я также пишу
@@ -27,7 +27,7 @@ ispired by: https://github.com/DoctorWkt/acwj
 
 ## Авторские права
 
-Это неофициальный перевод проекта https://github.com/ponyatov/pyccwj
+Это неофициальный перевод проекта https://github.com/DoctorWkt/acwj
 
 Несовпадающий код распространяется по лицензии MIT, остальное см. оригинальный проект.
 
